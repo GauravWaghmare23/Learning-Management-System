@@ -46,7 +46,7 @@ export const registerUser = CatchAsyncError(
     ): Promise<void> => {
         try {
             const { name, email, password } = req.body;
-    
+
             if (!name || !email || !password) {
                 return next(
                     new ErrorHandler(
@@ -55,9 +55,9 @@ export const registerUser = CatchAsyncError(
                     )
                 );
             }
-    
+
             const existingUser = await User.findOne({ email });
-    
+
             if (existingUser) {
                 return next(
                     new ErrorHandler(
@@ -66,20 +66,20 @@ export const registerUser = CatchAsyncError(
                     )
                 );
             }
-    
+
             const user: IRegisterUser = {
                 name,
                 email,
                 password,
             };
-    
+
             const activationToken = createActivationToken(user);
-    
+
             const activationCode = activationToken.activationCode;
-    
-            const data = {user:{name:user.name}, activationCode};
-    
-            const html = await ejs.renderFile(path.join(__dirname,"../mails/activation-mail.ejs"), data);
+
+            const data = { user: { name: user.name }, activationCode };
+
+            const html = await ejs.renderFile(path.join(__dirname, "../mails/activation-mail.ejs"), data);
 
             try {
                 await sendMail({
@@ -94,7 +94,7 @@ export const registerUser = CatchAsyncError(
                     message: `Registration successful. Please check your ${user.email} to activate your account.`,
                     activationToken
                 });
-            } catch (error:any) {
+            } catch (error: any) {
                 return next(
                     new ErrorHandler(
                         "Failed to send activation email. Please try again.",
@@ -102,7 +102,7 @@ export const registerUser = CatchAsyncError(
                     )
                 );
             }
-        } catch (error:any) {
+        } catch (error: any) {
             return next(
                 new ErrorHandler(
                     "Registration failed. Please try again.",
@@ -112,3 +112,85 @@ export const registerUser = CatchAsyncError(
         }
     }
 );
+
+// activate user
+
+export const activateUser = CatchAsyncError(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+        const { activation_token, activation_code } = req.body;
+
+        if (!activation_token || !activation_code) {
+            return next(
+                new ErrorHandler(
+                    "Activation token and code are required",
+                    400
+                )
+            );
+        }
+
+        let decoded: { user: IActivationPayload, activationCode: string };
+
+        try {
+            decoded = jwt.verify(activation_token, process.env.ACTIVATION_SECRET_KEY as Secret) as { user: IActivationPayload, activationCode: string };
+        } catch (error) {
+            if (error instanceof jwt.TokenExpiredError) {
+                return next(
+                    new ErrorHandler(
+                        "Activation token has expired",
+                        401
+                    )
+                );
+            }
+
+            return next(
+                new ErrorHandler(
+                    "Invalid activation token",
+                    401
+                )
+            );
+        }
+
+
+
+        if (decoded.activationCode !== activation_code) {
+            return next(
+                new ErrorHandler(
+                    "Invalid activation code",
+                    400
+                )
+            );
+        }
+
+        const { name, email, password } = decoded.user;
+
+        const existingUser = await User.findOne({ email });
+
+        if (existingUser) {
+            return next(
+                new ErrorHandler(
+                    "Email already exists",
+                    409
+                )
+            );
+        }
+
+        const user = await User.create({
+            name,
+            email,
+            password,
+        });
+
+        res.status(201).json({
+            success: true,
+            message: "Account activated and registered successfully",
+        });
+
+    } catch (error: any) {
+        return next(
+            new ErrorHandler(
+                "Failed to activate user. Please try again.",
+                500
+            )
+        );
+    }
+})
