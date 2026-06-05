@@ -4,6 +4,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import ErrorHandler from "./utils/ErrorHandler";
 import ErrorMiddleware from "./middlewares/ErrorMiddleware";
+import userRouter from "./routes/user.route";
 
 export const app = express();
 
@@ -18,6 +19,9 @@ app.use(cors({
     origin: process.env.ORIGIN,
     credentials: true,
 }));
+
+// user routes
+app.use("/api/v1", userRouter);
 
 
 // health check route

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Activation</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#f4f7fb;
+            padding:40px 20px;
+        }
+
+        .container{
+            max-width:600px;
+            margin:0 auto;
+            background:#ffffff;
+            border-radius:16px;
+            overflow:hidden;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .header{
+            background:linear-gradient(
+                135deg,
+                #2563eb,
+                #7c3aed
+            );
+            color:white;
+            text-align:center;
+            padding:40px 30px;
+        }
+
+        .header h1{
+            font-size:32px;
+            margin-bottom:10px;
+        }
+
+        .header p{
+            opacity:0.9;
+        }
+
+        .content{
+            padding:40px 30px;
+            color:#374151;
+            line-height:1.8;
+        }
+
+        .content h2{
+            color:#111827;
+            margin-bottom:15px;
+        }
+
+        .user-name{
+            font-weight:bold;
+            color:#2563eb;
+        }
+
+        .otp-box{
+            margin:30px 0;
+            text-align:center;
+        }
+
+        .otp{
+            display:inline-block;
+            background:#eff6ff;
+            color:#2563eb;
+            padding:18px 40px;
+            font-size:32px;
+            font-weight:bold;
+            letter-spacing:8px;
+            border-radius:12px;
+            border:2px dashed #2563eb;
+        }
+
+        .note{
+            background:#f9fafb;
+            border-left:4px solid #2563eb;
+            padding:16px;
+            border-radius:8px;
+            margin-top:20px;
+        }
+
+        .footer{
+            background:#f9fafb;
+            text-align:center;
+            padding:25px;
+            color:#6b7280;
+            font-size:14px;
+            border-top:1px solid #e5e7eb;
+        }
+
+        .footer a{
+            color:#2563eb;
+            text-decoration:none;
+        }
+
+        @media(max-width:600px){
+            .header{
+                padding:30px 20px;
+            }
+
+            .content{
+                padding:30px 20px;
+            }
+
+            .otp{
+                font-size:24px;
+                padding:15px 25px;
+                letter-spacing:5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Learning Management System</h1>
+            <p>Verify your account and start learning</p>
+        </div>
+
+        <div class="content">
+
+            <h2>Welcome, <span class="user-name"><%= user.name %></span> 👋</h2>
+
+            <p>
+                Thank you for registering with LMS.
+                To activate your account, please use the
+                verification code below.
+            </p>
+
+            <div class="otp-box">
+                <div class="otp">
+                    <%= activationCode %>
+                </div>
+            </div>
+
+            <p>
+                Enter this code on the account activation page.
+                This code will expire in <strong>10 minutes</strong>.
+            </p>
+
+            <div class="note">
+                If you did not create an account,
+                please ignore this email.
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>
+                © <%= new Date().getFullYear() %> LMS Platform.
+                All rights reserved.
+            </p>
+
+            <p>
+                Happy Learning 🚀
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
