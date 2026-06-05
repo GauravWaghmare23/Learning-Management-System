@@ -23,6 +23,8 @@ app.get("/health", (req:Request, res: Response, next: NextFunction)=>{
         status: "success",
         success: true,
         message: "Server is up and running",
+        server: "UP",
+        timestamp: new Date().toISOString(),
     });
 });
 
