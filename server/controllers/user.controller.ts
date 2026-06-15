@@ -11,8 +11,8 @@ import sendMail from "../utils/sendMail";
 // interfaces
 
 interface IActivationToken {
-    token: string;
-    activationCode: string;
+    activation_token: string;
+    activation_code: string;
 }
 
 interface IRegisterUser {
@@ -29,12 +29,19 @@ interface IActivationPayload {
     avatar?: string;
 }
 
+interface ILoginUser {
+    email: string;
+    password: string;
+}
+
+
+// create activation token and code
 export const createActivationToken = (user: IActivationPayload): IActivationToken => {
-    const activationCode = Math.floor(100000 + Math.random() * 900000).toString();
-    const token = jwt.sign({ user, activationCode }, process.env.ACTIVATION_SECRET_KEY as Secret, {
+    const activation_code = Math.floor(100000 + Math.random() * 900000).toString();
+    const activation_token = jwt.sign({ user, activation_code }, process.env.ACTIVATION_SECRET_KEY as Secret, {
         expiresIn: "10m",
     });
-    return { token, activationCode };
+    return { activation_token, activation_code };
 }
 
 // register User controller
@@ -75,7 +82,7 @@ export const registerUser = CatchAsyncError(
 
             const activationToken = createActivationToken(user);
 
-            const activationCode = activationToken.activationCode;
+            const activationCode = activationToken.activation_code;
 
             const data = { user: { name: user.name }, activationCode };
 
@@ -117,7 +124,7 @@ export const registerUser = CatchAsyncError(
 
 export const activateUser = CatchAsyncError(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-        const { activation_token, activation_code } = req.body;
+        const { activation_token, activation_code } = req.body as IActivationToken;
 
         if (!activation_token || !activation_code) {
             return next(
@@ -189,6 +196,54 @@ export const activateUser = CatchAsyncError(async (req: Request, res: Response, 
         return next(
             new ErrorHandler(
                 "Failed to activate user. Please try again.",
+                500
+            )
+        );
+    }
+});
+
+// login user
+
+export const loginUser = CatchAsyncError(async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+        const { email, password } = req.body as ILoginUser;
+
+        if (!email || !password) {
+            return next(
+                new ErrorHandler(
+                    "Please provide email and password",
+                    400
+                )
+            );
+        }
+
+        const user = await User.findOne({ email }).select("+password");
+
+        if (!user) {
+            return next(
+                new ErrorHandler(
+                    "Invalid email or password",
+                    401
+                )
+            );
+        }
+
+        const isPasswordMatch = await user.comparePassword(password);
+
+        if (!isPasswordMatch) {
+            return next(
+                new ErrorHandler(
+                    "Invalid email or password",
+                    401
+                )
+            );
+        }
+        
+
+    } catch (error:any) {
+        return next(
+            new ErrorHandler(
+                "Login failed. Please try again.",
                 500
             )
         );
