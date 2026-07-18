@@ -74,3 +74,7 @@
 {"level":"info","message":"Refresh token verified successfully","timestamp":"2026-07-18 21:00:55"}
 {"level":"info","message":"New access token generated for user 6a5b864e4a11af2e30c09921","timestamp":"2026-07-18 21:00:55"}
 {"level":"info","message":"Access token refreshed successfully","timestamp":"2026-07-18 21:00:55"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-18 21:01:22"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-18 21:01:22"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-18 21:01:22"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-18 21:01:22"}
