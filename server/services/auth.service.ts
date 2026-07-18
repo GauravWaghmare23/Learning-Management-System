@@ -197,6 +197,73 @@ class AuthService {
             message: "Logged out successfully"
         };
     }
+
+    public async updateAccessTokenService(refreshToken: string) {
+        logger.info("Refreshing access token...");
+
+        if (!refreshToken) {
+            logger.warn("Refresh token is required");
+
+            throw new ErrorHandler(
+                "Refresh token is required",
+                400
+            );
+        }
+
+        let decoded: IDecodedToken;
+
+        try {
+            logger.info("Verifying refresh token...");
+
+            decoded = jwt.verify(
+                refreshToken,
+                process.env.JWT_REFRESH_SECRET as Secret
+            ) as IDecodedToken;
+
+            logger.info("Refresh token verified successfully");
+        } catch (error) {
+            logger.warn("Invalid or expired refresh token");
+
+            throw new ErrorHandler(
+                "Invalid or expired refresh token",
+                401
+            );
+        }
+
+        const session = await redis.get(decoded._id.toString());
+
+        if (!session) {
+            logger.warn(
+                `Session not found for user ${decoded._id}`
+            );
+
+            throw new ErrorHandler(
+                "Session expired. Please login again.",
+                401
+            );
+        }
+
+        const user = await User.findById(decoded._id);
+
+        if (!user) {
+            logger.warn(`User not found: ${decoded._id}`);
+
+            throw new ErrorHandler(
+                "Unauthorized",
+                401
+            );
+        }
+
+        const accessToken = user.signAccessToken();
+
+        logger.info(
+            `New access token generated for user ${decoded._id}`
+        );
+
+        return {
+            accessToken,
+        };
+    }
 }
 
 export default new AuthService();

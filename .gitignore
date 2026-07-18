@@ -1,2 +1,6 @@
 server/.env
 server/logs/combined.log
+<<<<<<< HEAD
+=======
+server/logs/error.log
+>>>>>>> 12e135051f67e8d8aed4640f9918a6ca7c564643

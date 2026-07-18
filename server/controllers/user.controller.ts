@@ -73,6 +73,45 @@ class AuthController {
             res.status(200).json(response);
         }
     );
+
+    public updateAccessTokenController: RequestHandler = CatchAsyncError(
+        async (req, res, next) => {
+            logger.info("Access token refresh request received");
+
+            const refreshToken = req.cookies.refreshToken;
+
+            if (!refreshToken) {
+                logger.warn("Refresh token not found");
+
+                return next(
+                    new ErrorHandler(
+                        "Please login to access this resource",
+                        401
+                    )
+                );
+            }
+
+            const { accessToken } =
+                await authService.updateAccessTokenService(refreshToken);
+
+            res.cookie("accessToken", accessToken, {
+                expires: new Date(Date.now() + 15 * 60 * 1000),
+                maxAge: 15 * 60 * 1000,
+                httpOnly: true,
+                sameSite: "none",
+                secure:
+                    process.env.NODE_ENV === "production" ||
+                    process.env.NODE_ENV === "development",
+            });
+
+            logger.info("Access token refreshed successfully");
+
+            res.status(200).json({
+                success: true,
+                message: "Access token refreshed successfully",
+            });
+        }
+    );
 }
 
 export default new AuthController();
