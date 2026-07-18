@@ -6,8 +6,8 @@ export const createActivationToken = (
 ): IActivationToken => {
 
     const activationCode = Math.floor(100000 + Math.random() * 900000).toString();
-    const token = jwt.sign({ user, activationCode }, process.env.ACTIVATION_SECRET_KEY as Secret, {
+    const activationToken = jwt.sign({ user, activationCode }, process.env.ACTIVATION_SECRET_KEY as Secret, {
         expiresIn: "10m",
     });
-    return { token, activationCode };
+    return { activationToken, activationCode };
 };

@@ -9,3 +9,8 @@ export interface IActivateUser {
     activationCode: string;
     activationToken: string;
 }
+
+export interface ILoginUser{
+    email: string;
+    password: string;
+}

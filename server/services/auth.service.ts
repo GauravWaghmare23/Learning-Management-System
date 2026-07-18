@@ -1,8 +1,9 @@
-import { IActivateUser, IRegisterUser } from "../interfaces/auth.interface";
+import { IActivateUser, ILoginUser, IRegisterUser } from "../interfaces/auth.interface";
 import { IActivationJwtPayload, IActivationPayload } from "../interfaces/jwt.interface";
 import User from "../models/user.model";
 import { createActivationToken } from "../utils/activationToken";
 import ErrorHandler from "../utils/ErrorHandler";
+import { redis } from "../utils/redis";
 import sendMail from "../utils/sendMail";
 import jwt, { Secret } from "jsonwebtoken";
 
@@ -75,7 +76,7 @@ class AuthService {
         let decoded: IActivationJwtPayload;
 
         try {
-            decoded = jwt.verify(activationToken, process.env.ACTIVATION_SECRET_KEY as Secret) as { user: IActivationPayload, activationCode: string };
+            decoded = jwt.verify(activationToken, process.env.ACTIVATION_SECRET_KEY as Secret) as IActivationJwtPayload;
         } catch (error) {
             if (error instanceof jwt.TokenExpiredError) {
                 throw new ErrorHandler(
@@ -118,10 +119,52 @@ class AuthService {
         return {
             success: true,
             message: "Account activated and registered successfully",
-            data : {
+            data: {
                 name: user.name,
                 email: user.email
             }
+        };
+    }
+
+    public async loginUserService(loginData: ILoginUser) {
+
+        const { email, password } = loginData;
+
+        if (!email || !password) {
+            throw new ErrorHandler(
+                "Please provide all required fields",
+                400
+            );
+        }
+
+        const user = await User.findOne({ email }).select("+password");
+
+        if (!user) {
+            throw new ErrorHandler(
+                "Invalid email or password",
+                401
+            );
+        }
+
+        const isMatch = await user.comparePassword(password);
+
+        if (!isMatch) {
+            throw new ErrorHandler(
+                "Invalid email or password",
+                401
+            );
+        }
+
+        return {
+            user
+        };
+    }
+
+    public async logoutUserService(userId: String) {
+        await redis.del(userId.toString());
+        return {
+            success: true,
+            message: "Logged out successfully"
         };
     }
 }
