@@ -5,12 +5,17 @@ import { IDecodedToken } from "../interfaces/jwt.interface";
 import jwt, { Secret } from "jsonwebtoken";
 import { redis } from "../utils/redis";
 import User from "../models/user.model";
+import logger from "../config/logger";
 
 
 export const isAuthenticated = CatchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
+
+    logger.info("Checking authentication...");
+
     const accessToken = req.cookies.accessToken;
 
     if (!accessToken) {
+        logger.warn("Please login to access this resource");
         return next(
             new ErrorHandler(
                 "Please login to access this resource",
@@ -22,6 +27,7 @@ export const isAuthenticated = CatchAsyncError(async (req: Request, res: Respons
     let decoded: IDecodedToken;
 
     try {
+        logger.info("Verifying access token...");
         decoded = jwt.verify(accessToken, process.env.JWT_ACCESS_SECRET as Secret) as IDecodedToken;
     } catch (error) {
         return next(
@@ -31,6 +37,8 @@ export const isAuthenticated = CatchAsyncError(async (req: Request, res: Respons
             )
         )
     }
+
+    logger.info("accessToken verified successfully")
 
     const session = await redis.get(decoded._id.toString());
 

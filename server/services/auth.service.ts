@@ -1,3 +1,4 @@
+import logger from "../config/logger";
 import { IActivateUser, ILoginUser, IRegisterUser } from "../interfaces/auth.interface";
 import { IActivationJwtPayload, IActivationPayload } from "../interfaces/jwt.interface";
 import User from "../models/user.model";
@@ -11,9 +12,12 @@ class AuthService {
 
     public async registerUserService(userData: IRegisterUser) {
 
+        logger.info("Registering user...");
+
         const { name, email, password } = userData;
 
         if (!name || !email || !password) {
+            logger.error("Please provide all required fields");
             throw new ErrorHandler(
                 "Please provide all required fields",
                 400
@@ -24,6 +28,7 @@ class AuthService {
             await User.findOne({ email });
 
         if (existingUser) {
+            logger.error("Email already exists");
             throw new ErrorHandler(
                 "Email already exists",
                 409
@@ -54,6 +59,10 @@ class AuthService {
             data,
         });
 
+        logger.info(
+            `Registration successful. Please check ${email} to activate your account.`
+        );
+
         return {
             success: true,
             message:
@@ -64,9 +73,12 @@ class AuthService {
 
     public async activateUserService(activationData: IActivateUser) {
 
+        logger.info("Activating user...");
+
         const { activationCode, activationToken } = activationData;
 
         if (!activationCode || !activationToken) {
+            logger.error("Activation code and token are required");
             throw new ErrorHandler(
                 "Activation code and token are required",
                 400
@@ -76,14 +88,19 @@ class AuthService {
         let decoded: IActivationJwtPayload;
 
         try {
+            logger.info("Verifying activation token...");
             decoded = jwt.verify(activationToken, process.env.ACTIVATION_SECRET_KEY as Secret) as IActivationJwtPayload;
+            logger.info("Activation token verified successfully");
         } catch (error) {
             if (error instanceof jwt.TokenExpiredError) {
+                logger.error("Activation token has expired");
                 throw new ErrorHandler(
                     "Activation token has expired",
                     401
                 );
             }
+
+            logger.error("Invalid activation token");
 
             throw new ErrorHandler(
                 "Invalid activation token",
@@ -92,6 +109,7 @@ class AuthService {
         }
 
         if (decoded.activationCode !== activationCode) {
+            logger.error("Invalid activation code");
             throw new ErrorHandler(
                 "Invalid activation code",
                 401
@@ -104,6 +122,7 @@ class AuthService {
             await User.findOne({ email });
 
         if (existingUser) {
+            logger.error("Email already exists");
             throw new ErrorHandler(
                 "Email already exists",
                 409
@@ -115,6 +134,8 @@ class AuthService {
             email,
             password,
         });
+
+        logger.info("Account activated and registered successfully");
 
         return {
             success: true,
@@ -128,9 +149,12 @@ class AuthService {
 
     public async loginUserService(loginData: ILoginUser) {
 
+        logger.info("Logging in user...");
+
         const { email, password } = loginData;
 
         if (!email || !password) {
+            logger.error("Please provide all required fields");
             throw new ErrorHandler(
                 "Please provide all required fields",
                 400
@@ -140,6 +164,7 @@ class AuthService {
         const user = await User.findOne({ email }).select("+password");
 
         if (!user) {
+            logger.error("Invalid email or password");
             throw new ErrorHandler(
                 "Invalid email or password",
                 401
@@ -149,11 +174,14 @@ class AuthService {
         const isMatch = await user.comparePassword(password);
 
         if (!isMatch) {
+            logger.error("Invalid email or password");
             throw new ErrorHandler(
                 "Invalid email or password",
                 401
             );
         }
+
+        logger.info("User data received successfully");
 
         return {
             user
@@ -161,7 +189,9 @@ class AuthService {
     }
 
     public async logoutUserService(userId: String) {
+        logger.info("Logging out user...");
         await redis.del(userId.toString());
+        logger.info("Logged out successfully");
         return {
             success: true,
             message: "Logged out successfully"
