@@ -14,3 +14,7 @@
 {"level":"info","message":"accessToken and refreshToken for login are successfully send.","timestamp":"2026-07-18 18:45:31"}
 {"level":"info","message":"User logged in successfully.","timestamp":"2026-07-18 18:45:31"}
 {"level":"info","message":"SIGINT received. Shutting down gracefully...","timestamp":"2026-07-18 18:45:51"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-18 21:04:36"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-18 21:04:36"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-18 21:04:36"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-18 21:04:36"}
