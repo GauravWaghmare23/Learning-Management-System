@@ -2,6 +2,7 @@ import { Response } from "express";
 import { IUser } from "../models/user.model";
 import { ITokenOptions } from "../interfaces/jwt.interface";
 import { redis } from "./redis";
+import logger from "../config/logger";
 
 export const sendToken = async (user: IUser, statusCode: number, res: Response) => {
 
@@ -37,6 +38,10 @@ export const sendToken = async (user: IUser, statusCode: number, res: Response) 
 
     res.cookie("accessToken", accessToken, accessTokenOptions);
     res.cookie("refreshToken", refreshToken, refreshTokenOptions);
+
+    logger.info("accessToken and refreshToken for login are successfully send.")
+
+    logger.info("User logged in successfully.");
 
 
     res.status(statusCode).json({
