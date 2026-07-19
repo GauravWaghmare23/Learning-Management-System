@@ -10,5 +10,6 @@ userRouter.post("/activate-user", AuthController.activateUserController);
 userRouter.post("/login", loginLimiter, AuthController.loginUserController);
 userRouter.post("/logout", isAuthenticated, AuthController.logoutUserController);
 userRouter.get("/access-token",AuthController.updateAccessTokenController);
+userRouter.get("/me", isAuthenticated, AuthController.getUserByIdController);
 
 export default userRouter;

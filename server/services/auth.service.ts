@@ -1,6 +1,6 @@
 import logger from "../config/logger";
 import { IActivateUser, ILoginUser, IRegisterUser } from "../interfaces/auth.interface";
-import { IActivationJwtPayload, IActivationPayload } from "../interfaces/jwt.interface";
+import { IActivationJwtPayload, IActivationPayload, IDecodedToken } from "../interfaces/jwt.interface";
 import User from "../models/user.model";
 import { createActivationToken } from "../utils/activationToken";
 import ErrorHandler from "../utils/ErrorHandler";
@@ -263,6 +263,35 @@ class AuthService {
         return {
             accessToken,
         };
+    }
+
+    public async getUserByIdService(userId: string){
+
+        logger.info("Getting user by id...");
+
+        if (!userId) {
+            logger.warn("User id is required");
+            throw new ErrorHandler(
+                "User id is required",
+                400
+            );
+        }
+
+        const user = await User.findById(userId);
+
+        if(!user){
+            logger.warn("User not found");
+            throw new ErrorHandler(
+                "User not found",
+                404
+            );
+        }
+
+        logger.info("User data received successfully");
+
+        return {
+            user
+        }
     }
 }
 
