@@ -109,9 +109,33 @@ class AuthController {
             res.status(200).json({
                 success: true,
                 message: "Access token refreshed successfully",
+                accessToken: accessToken,
             });
         }
     );
+
+    public getUserByIdController:RequestHandler = CatchAsyncError(async(req,res,next)=>{
+
+        if(!req.user){
+            logger.warn("Unauthorized request to get user details");
+            return next(
+                new ErrorHandler(
+                    "Unauthorized",
+                    401
+                )
+            );
+        }
+        
+        const userId = req.user._id.toString();
+
+        const response = authService.getUserByIdService(userId);
+
+        res.status(200).json({
+            success: true,
+            message: "User data received successfully",
+            user: (await response).user
+        });
+    });
 }
 
 export default new AuthController();
