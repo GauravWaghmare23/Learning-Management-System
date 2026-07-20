@@ -14,3 +14,9 @@ export interface ILoginUser{
     email: string;
     password: string;
 }
+
+export interface ISocialAuth {
+    name: string;
+    email: string;
+    avatar: string;
+}

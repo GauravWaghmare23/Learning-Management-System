@@ -136,6 +136,18 @@ class AuthController {
             user: (await response).user
         });
     });
+
+    public socialAuthController: RequestHandler = CatchAsyncError(
+        async (req, res, next) => {
+            logger.info(`Social authentication request received for ${req.body.email}`);
+
+            const response = await authService.socialAuthService(req.body);
+
+            logger.info(`Social authentication successful for ${response.user.email}`);
+
+            await sendToken(response.user, 200, res);
+        }
+    )
 }
 
 export default new AuthController();

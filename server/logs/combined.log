@@ -78,3 +78,58 @@
 {"level":"info","message":"Redis connected successfully","timestamp":"2026-07-18 21:01:22"}
 {"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-18 21:01:22"}
 {"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-18 21:01:22"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:07:30"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:07:30"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:07:30"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:07:30"}
+{"level":"warn","message":"404 Route Not Found: POST /api/v1/social-auth","timestamp":"2026-07-20 16:09:18"}
+{"level":"warn","message":"404 Route Not Found: POST /api/v1/social-auth","timestamp":"2026-07-20 16:09:50"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:10:08"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:10:08"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:10:08"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:10:08"}
+{"level":"info","message":"Social authentication request received for gauravwaghmare17384@gmail.com","timestamp":"2026-07-20 16:10:12"}
+{"level":"info","message":"Logging or signing in user using social auth...","timestamp":"2026-07-20 16:10:12"}
+{"level":"info","message":"User found with email gauravwaghmare17384@gmail.com logging in...","timestamp":"2026-07-20 16:10:12"}
+{"level":"info","message":"Social authentication successful for gauravwaghmare17384@gmail.com","timestamp":"2026-07-20 16:10:12"}
+{"level":"info","message":"accessToken and refreshToken for login are successfully send.","timestamp":"2026-07-20 16:10:12"}
+{"level":"info","message":"User logged in successfully.","timestamp":"2026-07-20 16:10:12"}
+{"level":"info","message":"Social authentication request received for gauravwaghmare@gmail.com","timestamp":"2026-07-20 16:10:46"}
+{"level":"info","message":"Logging or signing in user using social auth...","timestamp":"2026-07-20 16:10:46"}
+{"level":"info","message":"No user registered creating new user with email gauravwaghmare@gmail.com","timestamp":"2026-07-20 16:10:46"}
+{"level":"info","message":"Social authentication successful for gauravwaghmare@gmail.com","timestamp":"2026-07-20 16:10:46"}
+{"level":"info","message":"accessToken and refreshToken for login are successfully send.","timestamp":"2026-07-20 16:10:46"}
+{"level":"info","message":"User logged in successfully.","timestamp":"2026-07-20 16:10:46"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:11:46"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 16:11:46"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 16:11:46"}
+{"level":"info","message":"Logout request received for user 6a5dfb2e2236d9835914794c","timestamp":"2026-07-20 16:11:46"}
+{"level":"info","message":"Logging out user...","timestamp":"2026-07-20 16:11:46"}
+{"level":"info","message":"Logged out successfully","timestamp":"2026-07-20 16:11:46"}
+{"level":"info","message":"User logged out successfully: 6a5dfb2e2236d9835914794c","timestamp":"2026-07-20 16:11:46"}
+{"level":"info","message":"Login request received for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 16:12:00"}
+{"level":"info","message":"Logging in user...","timestamp":"2026-07-20 16:12:00"}
+{"level":"info","message":"User data received successfully","timestamp":"2026-07-20 16:12:00"}
+{"level":"info","message":"Login successful for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 16:12:00"}
+{"level":"info","message":"accessToken and refreshToken for login are successfully send.","timestamp":"2026-07-20 16:12:00"}
+{"level":"info","message":"User logged in successfully.","timestamp":"2026-07-20 16:12:00"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:12:09"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 16:12:09"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 16:12:09"}
+{"level":"info","message":"Logout request received for user 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 16:12:09"}
+{"level":"info","message":"Logging out user...","timestamp":"2026-07-20 16:12:09"}
+{"level":"info","message":"Logged out successfully","timestamp":"2026-07-20 16:12:09"}
+{"level":"info","message":"User logged out successfully: 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 16:12:09"}
+{"level":"info","message":"Login request received for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 16:12:16"}
+{"level":"info","message":"Logging in user...","timestamp":"2026-07-20 16:12:16"}
+{"level":"error","message":"Invalid email or password","timestamp":"2026-07-20 16:12:16"}
+{"level":"info","message":"Login request received for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 16:12:23"}
+{"level":"info","message":"Logging in user...","timestamp":"2026-07-20 16:12:23"}
+{"level":"error","message":"Invalid email or password","timestamp":"2026-07-20 16:12:23"}
+{"level":"info","message":"Login request received for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 16:12:32"}
+{"level":"info","message":"Logging in user...","timestamp":"2026-07-20 16:12:32"}
+{"level":"info","message":"User data received successfully","timestamp":"2026-07-20 16:12:32"}
+{"level":"info","message":"Login successful for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 16:12:32"}
+{"level":"info","message":"accessToken and refreshToken for login are successfully send.","timestamp":"2026-07-20 16:12:32"}
+{"level":"info","message":"User logged in successfully.","timestamp":"2026-07-20 16:12:32"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","timestamp":"2026-07-20 16:14:41"}
