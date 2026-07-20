@@ -41,9 +41,9 @@ const userSchema: Schema<IUser> = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: [true, "Please enter your password"],
         minlength: [8, "Password must be at least 8 characters long"],
         select: false,
+        required: false,
     },
     avatar: {
         public_id: {
@@ -73,6 +73,11 @@ const userSchema: Schema<IUser> = new mongoose.Schema({
 
 // hash password before saving
 userSchema.pre("save", async function () {
+
+    if (!this.password) {
+        return;
+    }
+
     if (!this.isModified("password")) {
         return;
     }
@@ -87,7 +92,7 @@ userSchema.methods.signAccessToken = function (): string {
     return jwt.sign({ _id: this._id }, process.env.JWT_ACCESS_SECRET as Secret, { expiresIn: "15m" });
 }
 
-userSchema.methods.signRefreshToken = function () : string {
+userSchema.methods.signRefreshToken = function (): string {
     return jwt.sign({ _id: this._id }, process.env.JWT_REFRESH_SECRET as Secret, { expiresIn: "7d" });
 }
 

@@ -11,5 +11,6 @@ userRouter.post("/login", loginLimiter, AuthController.loginUserController);
 userRouter.post("/logout", isAuthenticated, AuthController.logoutUserController);
 userRouter.get("/access-token",AuthController.updateAccessTokenController);
 userRouter.get("/me", isAuthenticated, AuthController.getUserByIdController);
+userRouter.post("/social-auth", AuthController.socialAuthController);
 
 export default userRouter;

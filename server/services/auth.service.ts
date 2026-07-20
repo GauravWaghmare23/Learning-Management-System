@@ -1,5 +1,5 @@
 import logger from "../config/logger";
-import { IActivateUser, ILoginUser, IRegisterUser } from "../interfaces/auth.interface";
+import { IActivateUser, ILoginUser, IRegisterUser, ISocialAuth } from "../interfaces/auth.interface";
 import { IActivationJwtPayload, IActivationPayload, IDecodedToken } from "../interfaces/jwt.interface";
 import User from "../models/user.model";
 import { createActivationToken } from "../utils/activationToken";
@@ -292,6 +292,48 @@ class AuthService {
         return {
             user
         }
+    }
+
+    public async socialAuthService(data:ISocialAuth){
+
+         logger.info("Logging or signing in user using social auth...");
+
+         const {name,email,avatar} = data as ISocialAuth;
+
+         if(!name || !email || !avatar){
+            logger.error("Please provide all required fields");
+            throw new ErrorHandler(
+                "Please provide all required fields",
+                400
+            );
+         }
+
+         const user = await User.findOne({email});
+
+        if(!user){
+            logger.info(`No user registered creating new user with email ${email}`);
+
+            const newUser = await User.create({
+                name:name,
+                email:email,
+                avatar:{
+                    public_id:"social_auth_avatar",
+                    url:avatar
+                }
+            });
+
+            return {
+                user:newUser
+            };
+        }
+        logger.info(`User found with email ${email} logging in...`);
+
+        return {
+            user
+        };
+
+
+
     }
 }
 
