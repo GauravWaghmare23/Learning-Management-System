@@ -2,3 +2,4 @@ server/.env
 server/logs/combined.log
 server/logs/error.log
 server/logs/combined.log
+server/logs/combined.log

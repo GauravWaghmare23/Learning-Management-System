@@ -133,3 +133,763 @@
 {"level":"info","message":"accessToken and refreshToken for login are successfully send.","timestamp":"2026-07-20 16:12:32"}
 {"level":"info","message":"User logged in successfully.","timestamp":"2026-07-20 16:12:32"}
 {"level":"info","message":"SIGINT received. Shutting down gracefully...","timestamp":"2026-07-20 16:14:41"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:38:33"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:38:33"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:38:33"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:38:33"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:39:22"}
+{"level":"warn","message":"Please login to access this resource","timestamp":"2026-07-20 16:39:22"}
+{"level":"info","message":"Access token refresh request received","timestamp":"2026-07-20 16:39:27"}
+{"level":"info","message":"Refreshing access token...","timestamp":"2026-07-20 16:39:27"}
+{"level":"info","message":"Verifying refresh token...","timestamp":"2026-07-20 16:39:27"}
+{"level":"info","message":"Refresh token verified successfully","timestamp":"2026-07-20 16:39:27"}
+{"level":"info","message":"New access token generated for user 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 16:39:27"}
+{"level":"info","message":"Access token refreshed successfully","timestamp":"2026-07-20 16:39:27"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:39:32"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 16:39:32"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 16:39:32"}
+{"level":"info","message":"Getting user by id...","timestamp":"2026-07-20 16:39:32"}
+{"level":"info","message":"User data received successfully","timestamp":"2026-07-20 16:39:32"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:39:52"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 16:39:52"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 16:39:52"}
+{"level":"info","message":"Update name or email request received for 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 16:39:52"}
+{"level":"info","message":"Updating User Info.....","timestamp":"2026-07-20 16:39:52"}
+{"level":"error","message":"Email already exists","timestamp":"2026-07-20 16:39:52"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:40:03"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 16:40:03"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 16:40:03"}
+{"level":"info","message":"Update name or email request received for 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 16:40:03"}
+{"level":"info","message":"Updating User Info.....","timestamp":"2026-07-20 16:40:03"}
+{"level":"info","message":"User Info updated successfully","timestamp":"2026-07-20 16:40:03"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:40:25"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 16:40:25"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 16:40:25"}
+{"level":"info","message":"Update name or email request received for 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 16:40:25"}
+{"level":"info","message":"Updating User Info.....","timestamp":"2026-07-20 16:40:25"}
+{"level":"info","message":"User Info updated successfully","timestamp":"2026-07-20 16:40:25"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:41:14"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 16:41:14"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 16:41:14"}
+{"level":"info","message":"Update name or email request received for 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 16:41:14"}
+{"level":"info","message":"Updating User Info.....","timestamp":"2026-07-20 16:41:14"}
+{"level":"info","message":"User Info updated successfully","timestamp":"2026-07-20 16:41:14"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 16:43:49"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 16:43:49"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 16:43:49"}
+{"level":"info","message":"Update name or email request received for 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 16:43:49"}
+{"level":"info","message":"Updating User Info.....","timestamp":"2026-07-20 16:43:49"}
+{"level":"info","message":"User Info updated successfully","timestamp":"2026-07-20 16:43:49"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:04"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:04"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:04"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:04"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:11"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:11"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:11"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:11"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:13"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:13"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:13"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:13"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:22"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:22"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:22"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:22"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:41"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:41"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:41"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:41"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:44"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:44"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:44"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:44"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:47"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:47"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:47"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:47"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:53"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:53"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:53"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:53"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:54"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:54"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:54"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:54"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:51:57"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:51:57"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:51:57"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:51:57"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:00"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:00"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:00"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:00"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:10"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:10"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:10"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:10"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:11"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:11"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:11"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:11"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:13"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:13"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:13"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:13"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:14"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:14"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:15"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:15"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:16"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:16"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:16"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:16"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:22"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:22"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:22"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:22"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:25"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:25"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:25"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:25"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:28"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:28"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:28"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:28"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:40"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:40"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:40"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:40"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:52:42"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:52:42"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:52:42"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:52:42"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:53:00"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:53:01"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:53:01"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:53:01"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:53:03"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:53:03"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:53:03"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:53:03"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:53:09"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:53:09"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:53:09"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:53:09"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:53:31"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:53:31"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:53:31"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:53:31"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:53:34"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:53:34"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:53:34"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:53:34"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:15"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:15"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:15"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:15"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:18"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:18"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:18"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:18"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:33"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:33"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:33"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:33"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:36"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:36"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:36"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:36"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:45"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:45"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:45"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:45"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:47"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:47"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:47"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:47"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:52"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:52"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:52"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:52"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:57"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:57"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:57"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:57"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:54:59"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:54:59"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:54:59"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:54:59"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 16:55:03"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 16:55:03"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 16:55:03"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 16:55:03"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:13:22"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:13:22"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:13:22"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:13:22"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:13:24"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:13:24"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:13:25"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:13:25"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:13:28"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:13:28"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:13:28"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:13:28"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:13:37"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:13:37"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:13:37"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:13:37"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:13:44"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:13:44"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:13:44"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:13:44"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:13:46"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:13:46"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:13:46"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:13:46"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:13:49"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:13:49"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:13:49"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:13:49"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:14:03"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:14:03"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:14:03"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:14:03"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:14:19"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:14:19"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:14:19"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:14:19"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:14:24"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:14:24"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:14:24"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:14:24"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:14:38"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:14:38"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:14:38"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:14:38"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:14:42"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:14:42"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:14:42"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:14:42"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:14:50"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:14:50"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:14:50"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:14:50"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:14:57"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:14:57"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:14:57"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:14:57"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:14:58"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:14:58"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:14:58"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:14:58"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:15:15"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:15:15"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:15:15"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:15:15"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:15:25"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:15:25"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:15:25"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:15:25"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:15:28"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:15:28"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:15:28"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:15:28"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:15:37"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:15:37"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:15:37"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:15:37"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:15:40"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:15:40"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:15:40"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:15:40"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:15:41"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:15:41"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:15:41"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:15:41"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:15:48"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:15:48"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:15:48"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:15:48"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:15:54"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:15:54"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:15:54"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:15:54"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:16:01"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:16:01"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:16:01"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:16:01"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:16:02"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:16:02"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:16:02"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:16:02"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:16:12"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:16:12"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:16:12"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:16:12"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:16:19"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:16:19"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:16:19"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:16:19"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:16:52"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:16:52"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:16:52"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:16:52"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:16:56"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:16:56"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:16:56"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:16:56"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:19:27"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:19:27"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:19:27"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:19:27"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:20:00"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:20:00"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:20:00"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:20:00"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:20:08"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:20:08"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:20:08"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:20:08"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:20:25"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:20:25"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:20:25"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:20:25"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:20:44"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:20:45"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:20:45"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:20:45"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 17:22:24"}
+{"level":"warn","message":"Please login to access this resource","timestamp":"2026-07-20 17:22:24"}
+{"level":"info","message":"Access token refresh request received","timestamp":"2026-07-20 17:22:29"}
+{"level":"info","message":"Refreshing access token...","timestamp":"2026-07-20 17:22:29"}
+{"level":"info","message":"Verifying refresh token...","timestamp":"2026-07-20 17:22:29"}
+{"level":"info","message":"Refresh token verified successfully","timestamp":"2026-07-20 17:22:29"}
+{"level":"info","message":"New access token generated for user 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 17:22:29"}
+{"level":"info","message":"Access token refreshed successfully","timestamp":"2026-07-20 17:22:29"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 17:22:33"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 17:22:33"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 17:22:33"}
+{"level":"info","message":"Getting user by id...","timestamp":"2026-07-20 17:22:33"}
+{"level":"info","message":"User data received successfully","timestamp":"2026-07-20 17:22:33"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 17:22:38"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 17:22:38"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 17:22:38"}
+{"level":"info","message":"Update password request received for 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 17:22:38"}
+{"level":"info","message":"Updating User Password.....","timestamp":"2026-07-20 17:22:38"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 17:22:48"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 17:22:48"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 17:22:48"}
+{"level":"info","message":"Logout request received for user 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 17:22:48"}
+{"level":"info","message":"Logging out user...","timestamp":"2026-07-20 17:22:48"}
+{"level":"info","message":"Logged out successfully","timestamp":"2026-07-20 17:22:48"}
+{"level":"info","message":"User logged out successfully: 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 17:22:48"}
+{"level":"info","message":"Login request received for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 17:22:54"}
+{"level":"info","message":"Logging in user...","timestamp":"2026-07-20 17:22:54"}
+{"level":"error","message":"Invalid email or password","timestamp":"2026-07-20 17:22:54"}
+{"level":"info","message":"Login request received for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 17:23:03"}
+{"level":"info","message":"Logging in user...","timestamp":"2026-07-20 17:23:03"}
+{"level":"info","message":"User data received successfully","timestamp":"2026-07-20 17:23:03"}
+{"level":"info","message":"Login successful for gauravwaghmare.dev@gmail.com","timestamp":"2026-07-20 17:23:03"}
+{"level":"info","message":"accessToken and refreshToken for login are successfully send.","timestamp":"2026-07-20 17:23:03"}
+{"level":"info","message":"User logged in successfully.","timestamp":"2026-07-20 17:23:03"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 17:23:34"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 17:23:34"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 17:23:34"}
+{"level":"info","message":"Update password request received for 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 17:23:34"}
+{"level":"info","message":"Updating User Password.....","timestamp":"2026-07-20 17:23:34"}
+{"level":"error","message":"Please provide both old and new passwords","timestamp":"2026-07-20 17:23:34"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:26:48"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:26:48"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:26:48"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:26:48"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:26:51"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:26:51"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:26:51"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:26:51"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:29:48"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:29:48"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:29:48"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:29:48"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:29:51"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:29:51"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:29:51"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:29:51"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:29:55"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:29:55"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:29:55"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:29:55"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:29:58"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:29:58"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:29:58"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:29:58"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:30:01"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:30:01"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:30:01"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:30:01"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:30:06"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:30:06"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:30:06"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:30:06"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:30:09"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:30:09"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:30:09"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:30:09"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:30:13"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:30:13"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:30:13"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:30:13"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:30:50"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:30:50"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:30:50"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:30:50"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:31:07"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:31:07"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:31:07"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:31:07"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:31:09"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:31:09"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:31:09"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:31:09"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:31:24"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:31:24"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:31:24"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:31:24"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:31:35"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:31:36"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:31:36"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:31:36"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:31:50"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:31:50"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:31:50"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:31:50"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:31:54"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:31:55"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:31:55"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:31:55"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:32:20"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:32:20"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:32:20"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:32:20"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:32:52"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:32:52"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:32:52"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:32:52"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:33:17"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:33:17"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:33:17"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:33:17"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:33:25"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:33:26"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:33:26"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:33:26"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:33:27"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:33:27"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:33:27"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:33:27"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:33:30"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:33:30"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:33:30"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:33:30"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:33:43"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:33:43"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:33:43"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:33:43"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:33:45"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:33:45"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:33:45"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:33:45"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:34:00"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:34:00"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:34:00"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:34:00"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:34:03"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:34:03"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:34:03"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:34:03"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:34:05"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:34:05"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:34:05"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:34:05"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:34:13"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:34:13"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:34:13"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:34:13"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:34:16"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:34:16"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:34:16"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:34:16"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:01"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:01"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:01"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:01"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:03"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:03"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:03"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:03"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:10"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:10"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:10"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:10"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:18"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:18"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:18"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:18"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:20"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:20"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:20"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:20"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:29"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:29"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:29"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:29"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:34"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:34"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:34"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:34"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:47"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:47"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:47"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:47"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:35:55"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:35:55"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:35:55"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:35:55"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:36:05"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:36:05"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:36:05"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:36:05"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:36:11"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:36:11"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:36:11"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:36:11"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:36:29"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:36:29"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:36:29"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:36:29"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:36:36"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:36:36"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:36:36"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:36:36"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:36:39"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:36:39"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:36:39"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:36:39"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:36:43"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:36:43"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:36:43"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:36:43"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:36:44"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:36:44"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:36:44"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:36:44"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:16"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:16"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:16"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:16"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:28"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:28"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:28"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:28"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:30"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:30"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:30"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:30"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:35"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:35"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:35"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:35"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:36"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:36"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:36"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:36"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:40"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:40"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:40"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:40"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:44"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:45"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:45"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:45"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:46"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:46"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:46"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:46"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:47"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:47"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:47"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:47"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:53"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:53"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:53"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:53"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:37:55"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:37:55"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:37:55"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:37:55"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:38:16"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:38:16"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:38:16"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:38:16"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:43:57"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:43:57"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:43:57"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:43:57"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:43:59"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:43:59"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:43:59"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:43:59"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:44:01"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:44:01"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:44:01"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:44:01"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:44:03"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:44:03"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:44:03"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:44:03"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:44:06"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:44:06"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:44:06"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:44:06"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:44:10"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:44:10"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:44:10"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:44:10"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:44:13"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:44:13"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:44:13"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:44:13"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:44:35"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:44:35"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:44:35"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:44:35"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:44:40"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:44:40"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:44:40"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:44:40"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:59:03"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:59:03"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:59:03"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:59:03"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:59:07"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:59:07"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:59:08"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:59:08"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:59:19"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:59:19"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:59:19"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:59:19"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 17:59:20"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 17:59:20"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 17:59:20"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 17:59:20"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:01:18"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:01:18"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:01:18"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:01:18"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:01:39"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:01:39"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:01:39"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:01:39"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:01:41"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:01:41"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:01:41"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:01:41"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:03:56"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:03:56"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:03:56"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:03:56"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:04:15"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:04:15"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:04:15"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:04:15"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:04:35"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:04:35"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:04:35"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:04:35"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:16:23"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:16:23"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:16:23"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:16:23"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:16:33"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:16:33"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:16:33"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:16:33"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:19:18"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:19:18"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:19:18"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:19:18"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:20:01"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:20:01"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:20:01"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:20:01"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:20:04"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:20:04"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:20:04"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:20:04"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:21:38"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:21:38"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:21:38"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:21:38"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:22:06"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:22:06"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:22:06"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:22:06"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:22:08"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:22:08"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:22:08"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:22:08"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:22:15"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:22:15"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:22:15"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:22:15"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:22:55"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:22:55"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:22:55"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:22:55"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:22:58"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:22:58"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:22:58"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:22:58"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:23:32"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:23:32"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:23:32"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:23:32"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:26:13"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:26:13"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:26:13"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:26:13"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:26:17"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:26:17"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:26:17"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:26:17"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 18:27:55"}
+{"level":"warn","message":"Please login to access this resource","timestamp":"2026-07-20 18:27:55"}
+{"level":"info","message":"Access token refresh request received","timestamp":"2026-07-20 18:27:59"}
+{"level":"info","message":"Refreshing access token...","timestamp":"2026-07-20 18:27:59"}
+{"level":"info","message":"Verifying refresh token...","timestamp":"2026-07-20 18:27:59"}
+{"level":"info","message":"Refresh token verified successfully","timestamp":"2026-07-20 18:27:59"}
+{"level":"info","message":"New access token generated for user 6a5b864e4a11af2e30c09921","timestamp":"2026-07-20 18:27:59"}
+{"level":"info","message":"Access token refreshed successfully","timestamp":"2026-07-20 18:27:59"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 18:28:02"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 18:28:02"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 18:28:02"}
+{"level":"info","message":"Getting user by id...","timestamp":"2026-07-20 18:28:02"}
+{"level":"info","message":"User data received successfully","timestamp":"2026-07-20 18:28:02"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 18:30:27"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 18:30:27"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 18:30:27"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 18:31:38"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 18:31:38"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 18:31:38"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 18:33:21"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 18:33:21"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 18:33:21"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:33:59"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:33:59"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:33:59"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:33:59"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 18:34:04"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 18:34:04"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 18:34:04"}

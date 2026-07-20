@@ -1,2 +1,5 @@
 {"level":"error","message":"Invalid email or password","timestamp":"2026-07-20 16:12:16"}
 {"level":"error","message":"Invalid email or password","timestamp":"2026-07-20 16:12:23"}
+{"level":"error","message":"Email already exists","timestamp":"2026-07-20 16:39:52"}
+{"level":"error","message":"Invalid email or password","timestamp":"2026-07-20 17:22:54"}
+{"level":"error","message":"Please provide both old and new passwords","timestamp":"2026-07-20 17:23:34"}

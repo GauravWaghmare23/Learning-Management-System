@@ -114,9 +114,9 @@ class AuthController {
         }
     );
 
-    public getUserByIdController:RequestHandler = CatchAsyncError(async(req,res,next)=>{
+    public getUserByIdController: RequestHandler = CatchAsyncError(async (req, res, next) => {
 
-        if(!req.user){
+        if (!req.user) {
             logger.warn("Unauthorized request to get user details");
             return next(
                 new ErrorHandler(
@@ -125,7 +125,7 @@ class AuthController {
                 )
             );
         }
-        
+
         const userId = req.user._id.toString();
 
         const response = authService.getUserByIdService(userId);
@@ -148,6 +148,83 @@ class AuthController {
             await sendToken(response.user, 200, res);
         }
     )
+
+    public UpdateNameOrEmailController: RequestHandler = CatchAsyncError(
+        async (req, res, next) => {
+            logger.info(`Update name or email request received for ${req.user?._id}`);
+
+            if (!req.user) {
+                return next(
+                    new ErrorHandler("Unauthorized", 401)
+                );
+            }
+
+            const userId = req.user._id.toString();
+
+            const response = await authService.updateEmailOrName(req.body, userId);
+
+            res.status(200).json({
+                success: true,
+                message: "User info updated successfully",
+                user: response.user
+            });
+        }
+    );
+
+    public UpdatePasswordController: RequestHandler = CatchAsyncError(
+        async (req, res, next) => {
+            logger.info(`Update password request received for ${req.user?._id}`);
+
+            const { oldPassword, newPassword } = req.body;
+
+            if (!req.user) {
+                return next(
+                    new ErrorHandler("Unauthorized", 401)
+                );
+            }
+
+            const userId = req.user._id.toString();
+
+            const response = await authService.updateUserPassword(userId, oldPassword, newPassword);
+
+            res.status(200).json({
+                success: response.success,
+                message: response.message,
+                user: response.user
+            });
+        }
+    );
+
+    public updateAvatarController: RequestHandler = CatchAsyncError(
+        async (req, res, next) => {
+
+            if (!req.user) {
+                return next(
+                    new ErrorHandler(
+                        "Unauthorized",
+                        401
+                    )
+                );
+            }
+
+            if (!req.file) {
+                return next(
+                    new ErrorHandler(
+                        "Avatar is required",
+                        400
+                    )
+                );
+            }
+
+            const response =
+                await authService.updateAvatarService(
+                    req.user._id.toString(),
+                    req.file
+                );
+
+            res.status(200).json(response);
+        }
+    );
 }
 
 export default new AuthController();
