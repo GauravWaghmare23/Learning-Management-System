@@ -20,3 +20,8 @@ export interface ISocialAuth {
     email: string;
     avatar: string;
 }
+
+export interface IEmailOrName{
+    name:string;
+    email:string;
+}

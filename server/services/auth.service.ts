@@ -1,5 +1,5 @@
 import logger from "../config/logger";
-import { IActivateUser, ILoginUser, IRegisterUser, ISocialAuth } from "../interfaces/auth.interface";
+import { IActivateUser, IEmailOrName, ILoginUser, IRegisterUser, ISocialAuth } from "../interfaces/auth.interface";
 import { IActivationJwtPayload, IActivationPayload, IDecodedToken } from "../interfaces/jwt.interface";
 import User from "../models/user.model";
 import { createActivationToken } from "../utils/activationToken";
@@ -7,6 +7,9 @@ import ErrorHandler from "../utils/ErrorHandler";
 import { redis } from "../utils/redis";
 import sendMail from "../utils/sendMail";
 import jwt, { Secret } from "jsonwebtoken";
+import cloudinary from "../config/cloudinary";
+import { UploadApiResponse } from "cloudinary";
+import streamifier from "streamifier";
 
 class AuthService {
 
@@ -265,7 +268,7 @@ class AuthService {
         };
     }
 
-    public async getUserByIdService(userId: string){
+    public async getUserByIdService(userId: string) {
 
         logger.info("Getting user by id...");
 
@@ -279,7 +282,7 @@ class AuthService {
 
         const user = await User.findById(userId);
 
-        if(!user){
+        if (!user) {
             logger.warn("User not found");
             throw new ErrorHandler(
                 "User not found",
@@ -294,36 +297,36 @@ class AuthService {
         }
     }
 
-    public async socialAuthService(data:ISocialAuth){
+    public async socialAuthService(data: ISocialAuth) {
 
-         logger.info("Logging or signing in user using social auth...");
+        logger.info("Logging or signing in user using social auth...");
 
-         const {name,email,avatar} = data as ISocialAuth;
+        const { name, email, avatar } = data as ISocialAuth;
 
-         if(!name || !email || !avatar){
+        if (!name || !email || !avatar) {
             logger.error("Please provide all required fields");
             throw new ErrorHandler(
                 "Please provide all required fields",
                 400
             );
-         }
+        }
 
-         const user = await User.findOne({email});
+        const user = await User.findOne({ email });
 
-        if(!user){
+        if (!user) {
             logger.info(`No user registered creating new user with email ${email}`);
 
             const newUser = await User.create({
-                name:name,
-                email:email,
-                avatar:{
-                    public_id:"social_auth_avatar",
-                    url:avatar
+                name: name,
+                email: email,
+                avatar: {
+                    public_id: "social_auth_avatar",
+                    url: avatar
                 }
             });
 
             return {
-                user:newUser
+                user: newUser
             };
         }
         logger.info(`User found with email ${email} logging in...`);
@@ -332,8 +335,183 @@ class AuthService {
             user
         };
 
+    }
+
+    public async updateEmailOrName(data: IEmailOrName, userId: string) {
+
+        logger.info("Updating User Info.....");
+
+        const { name, email } = data as IEmailOrName;
+
+        const user = await User.findById(userId);
+
+        if (email && user) {
+
+            const isEmailExist = await User.findOne({ email });
+
+            if (isEmailExist) {
+                logger.error("Email already exists");
+                throw new ErrorHandler(
+                    "Email already exists",
+                    409
+                );
+            }
+
+            user.email = email;
+        }
+
+        if (name && user) {
+            user.name = name;
+        }
+
+        if (!user) {
+            logger.error("User not found");
+            throw new ErrorHandler(
+                "User not found",
+                404
+            );
+        }
+
+        await user?.save();
+
+        await redis.set(
+            userId.toString(),
+            JSON.stringify(user),
+            "EX",
+            7 * 24 * 60 * 60
+        );
+
+        logger.info("User Info updated successfully");
+
+        return {
+            user
+        }
+    }
+
+    public async updateUserPassword(userId: string, oldPassword: string, newPassword: string) {
+
+        logger.info("Updating User Password.....");
+
+        const user = await User.findById(userId).select("+password");
+
+        if (!user) {
+            logger.error("User not found");
+            throw new ErrorHandler(
+                "User not found",
+                404
+            );
+        }
+
+        if (user?.password === undefined) {
+            logger.error("This account uses Google Sign-In. Password updates are not available.");
+            throw new ErrorHandler(
+                "This account uses Google Sign-In. Password updates are not available.",
+                400
+            );
+        }
+
+        if (!oldPassword || !newPassword) {
+            logger.error("Please provide both old and new passwords");
+            throw new ErrorHandler(
+                "Please provide both old and new passwords",
+                400
+            );
+        }
 
 
+        const isMatch = await user.comparePassword(oldPassword);
+
+        if (!isMatch) {
+            logger.error("Old password is incorrect");
+            throw new ErrorHandler(
+                "Old password is incorrect",
+                401
+            );
+        }
+
+        user.password = newPassword;
+
+        await user.save();
+
+        await redis.set(
+            userId.toString(),
+            JSON.stringify(user),
+            "EX",
+            7 * 24 * 60 * 60
+        );
+
+        return {
+            success: true,
+            message: "Password updated successfully",
+            user: user
+        }
+    }
+
+    public async updateAvatarService(
+        userId: string,
+        file: Express.Multer.File
+    ) {
+
+        const user = await User.findById(userId);
+
+        if (!user) {
+            throw new ErrorHandler(
+                "User not found",
+                404
+            );
+        }
+
+        if (user.avatar?.public_id) {
+            await cloudinary.v2.uploader.destroy(
+                user.avatar.public_id
+            );
+        }
+
+        const result: UploadApiResponse =
+            await new Promise((resolve, reject) => {
+
+                const stream =
+                    cloudinary.v2.uploader.upload_stream(
+                        {
+                            folder: "avatars",
+                            width: 200,
+                            height: 200,
+                            crop: "fill",
+                        },
+                        (error, result) => {
+
+                            if (error) {
+                                reject(error);
+                            } else {
+                                resolve(result!);
+                            }
+                        }
+                    );
+
+                streamifier
+                    .createReadStream(file.buffer)
+                    .pipe(stream);
+            });
+
+        user.avatar = {
+            public_id: result.public_id,
+            url: result.secure_url,
+        };
+
+        await user.save();
+
+        await redis.set(
+            userId,
+            JSON.stringify(user),
+            "EX",
+            7 * 24 * 60 * 60
+        );
+
+        return {
+            success: true,
+            message: "Avatar updated successfully",
+            user,
+        };
     }
 }
 
