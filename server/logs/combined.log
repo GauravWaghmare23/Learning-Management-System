@@ -886,3 +886,10 @@
 {"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 18:33:21"}
 {"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 18:33:21"}
 {"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 18:33:21"}
+{"level":"info","message":"Starting LMS Backend...","timestamp":"2026-07-20 18:33:59"}
+{"level":"info","message":"Redis connected successfully","timestamp":"2026-07-20 18:33:59"}
+{"level":"info","message":"MongoDB connected successfully: localhost","timestamp":"2026-07-20 18:33:59"}
+{"level":"info","message":"🚀 Server is running on http://localhost:8000 (development)","timestamp":"2026-07-20 18:33:59"}
+{"level":"info","message":"Checking authentication...","timestamp":"2026-07-20 18:34:04"}
+{"level":"info","message":"Verifying access token...","timestamp":"2026-07-20 18:34:04"}
+{"level":"info","message":"accessToken verified successfully","timestamp":"2026-07-20 18:34:04"}
